@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+// const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -14,14 +14,14 @@ module.exports = {
         contentBase: './dist',
      },
     plugins: [
-        new CleanWebpackPlugin(),
+        // new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
         template: './src/index.html'
     })],
     module: {
         rules:[
             {
-                test: /\.css$/,
+                test: /\.css$/i,
                 use: [
                     'style-loader',
                     'css-loader'

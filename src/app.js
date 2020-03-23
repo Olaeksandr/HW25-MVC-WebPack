@@ -1,1 +1,3 @@
-console.log('hello world');
+import Controller from './controller/Controller';
+
+new Controller();
